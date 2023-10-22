@@ -35,5 +35,10 @@ namespace Grunderna_i_OOP
         {
             return (4 * Math.PI * Math.Pow(Radius, 3)) / 3;
         }
+
+        public void PrintInfoAboutCircle(Circle circle)
+        {
+            Console.WriteLine($"Cirkels radie: {circle.Radius}, Area: {circle.Area:0.##}, Omkrets: {circle.Circumference:0.##}\nVolym för sfär med samma radie: {circle.VolumeIfItWereASphere:0.##}\n");
+        }
     }
 }
